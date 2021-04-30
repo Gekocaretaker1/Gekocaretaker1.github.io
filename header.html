@@ -1,0 +1,19 @@
+<geko-navstick>
+    <div is="geko-navbar">
+        <a is="geko-navlink" id="navHome" goto="index.html" activ="no" off="inherit" on="#111" active-color="#4caf50">404</a>
+        <!--<div is="geko-navdropdown">
+            <button is="geko-navdropbutton" reveal="testDrop" activ="no" off="inherit" on="#111" active-color="#4caf50">Drop</button>
+            <div is="geko-navdropcontainer" id="testDrop">
+                <a is="geko-navdropcontlink" goto="404.html" off="inherit" on="#ddd">404 #3</a>
+                <a is="geko-navdropcontlink" goto="404.html" off="inherit" on="#ddd">404 #3</a>
+            </div>
+        </div>-->
+    </div>
+</geko-navstick>
+<script>
+    var selectActiv = $('geko-data');
+
+    if(selectActiv.attr('page') == "home") {
+        $("#navHome").attr("activ", "yes");
+    }
+</script>
