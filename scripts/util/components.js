@@ -33,7 +33,11 @@ define(["jquery"], function($) {
             super();
 
             this.style.overflow = "hidden";
-            this.style.backgroundColor = '#333';
+            if($(this).attr("background") == null) {
+                this.style.backgroundColor = '#333';
+            } else {
+                this.style.backgroundColor = $(this).attr("background");
+            }
         }
     }
 
